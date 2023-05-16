@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email-list</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div id="app">
+
+        <ul>
+            <li v-for="email in arrEmails">
+                {{ email }}
+            </li>
+        </ul>
+
+    </div>
 </body>
 </html>
